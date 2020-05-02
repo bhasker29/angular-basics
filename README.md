@@ -12,5 +12,18 @@ Above mentioned components service and View components are classes, decorators a
 - For services id defined by using @Injectable as decorator. 
 
 ## Component life cycle:
+Following are the angular lifecycle hooks available in Angular:
+| lifecycle method Hook | Desc |
+|------|------|
+|ngOnChanges()| When ever input properties are (re)set, the method supply SimpleChanges instance which provide value and changed value. Its called before ngOnInit() |
+|ngOnInit()|its called first time when all  properties are displayed and directives/component are initalized. its called after ngOnchanges()|
+|ngDoCheck()|its called to check if there is any change in vew and component|
+|ngDoContentInit()|Responds after enternal content is projectected in component or directive |
+|ngDoContentCheck()|Check for content check|
+|ngDoViewInit()|Respond when activates component view and child view which a derective is in |
+|ngDoViewCheck()|Check for changes in the view , child view |
+|ngonDestroy|Do clean up when component is closed , unsubcribe obsrverables and detach event handler.|
+
+
 
 
